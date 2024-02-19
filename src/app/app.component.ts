@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Iplayers } from './shared/model/players';
+import { cricketers } from './shared/const/players';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PipesFilter';
+  searchedValue : string = ''
+  players : Array<Iplayers> = cricketers;
 }
